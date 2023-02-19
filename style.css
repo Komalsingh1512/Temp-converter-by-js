@@ -3,8 +3,31 @@
     padding: 0;
 }
 body{
+    background: black;
     padding: 30px 400px;
     margin: 50px 50px;
+}
+section::before
+{
+    content: '';
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(190, 218, 6, 0.7),rgba(220, 76, 4, 0.689));
+    clip-path: circle(30% at right 70%);
+}
+ section::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(19, 150, 231, 0.653),rgba(235, 23, 150, 0.664));
+    clip-path: circle(20% at 10% 10%);
+    /* z-index: 1; */
 }
 h1{
     color: aliceblue;
@@ -19,7 +42,7 @@ h1{
     width: 500px;
     border-radius: 5px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-    background-color: #084ba3;
+    background: linear-gradient(rgba(38, 0, 255, 0.444), rgba(255, 204, 0, 0.597));
     padding: 50px;
 }
 .input-div{
